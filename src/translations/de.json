@@ -1,0 +1,8 @@
+{
+  "texts": "Texte",
+  "numbers": "Nummern",
+  "dates": "Datumsangaben",
+  "plural": "Ich habe {num, plural, one {# Hund} other {# Hunde}}.",
+  "select": "Ich bin {gender, select, Male {ein Mann} Female {eine Frau}}.",
+  "both": "{gender, select, Male {Er} Female {Sie}} hat {num, plural, one {# Katze} other {# Katzen}}."
+}
