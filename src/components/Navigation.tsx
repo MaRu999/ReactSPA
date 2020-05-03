@@ -45,11 +45,11 @@ export const Navigation = (): JSX.Element => {
         localStorage.setItem('myLang', lang);
     }
 
-    type msgs = {
+    type Msgs = {
         [key: string]: Record<string, string>;
     }
 
-    const intlMessages: msgs = {
+    const intlMessages: Msgs = {
         'de': MsgDe,
         'en': MsgEn,
         'fr': MsgFr

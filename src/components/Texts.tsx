@@ -13,7 +13,6 @@ export const Texts = (): JSX.Element => {
 
     const changeGender = (gender: string): void => {
         setGender(gender);
-        console.log(gender);
     }
 
     return (
