@@ -4,6 +4,5 @@
   "dates": "Dates",
   "plural": "I have {num, plural, one {# dog} other {# dogs}}.",
   "select": "I am a {gender, select, Male {man} Female {woman}}.",
-  "both": "{gender, select, Male {He} Female {She}} has {num, plural, one {# cat} other {# cats}}.",
-  "ordinal": "I am the {order, selectordinal, one {#st person} two {#nd person} three {#rd person} other {#th person}}"
+  "both": "{gender, select, Male {He} Female {She}} has {num, plural, one {# cat} other {# cats}}."
 }

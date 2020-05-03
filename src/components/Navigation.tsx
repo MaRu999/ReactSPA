@@ -27,9 +27,10 @@ const NavSpan = styled.span`
     `
 export const Navigation = (): JSX.Element => {
 
+    //if setting should only be saved until browser is killed, use sessionStorage instead of localStorage
     const getLanguageFromStorage = (): string => {
         const lang = localStorage.getItem('myLang');
-        if(lang !== null) {
+        if (lang !== null) {
             return lang;
         } else {
             return "de";
@@ -40,11 +41,12 @@ export const Navigation = (): JSX.Element => {
 
     const changeLanguage = (lang: string): void => {
         setChosenLang(lang);
+        //if setting should only be saved until browser is killed, use sessionStorage instead of localStorage
         localStorage.setItem('myLang', lang);
     }
 
     type msgs = {
-        [key: string]: Record<string, string>
+        [key: string]: Record<string, string>;
     }
 
     const intlMessages: msgs = {

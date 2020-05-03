@@ -23,7 +23,6 @@ export const Texts = (): JSX.Element => {
                     onChange={(selectOption): void => changeGender(selectOption.target.value)}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
-                <option value="Neutral">Neutral</option>
             </select>
             <br/>
             <FormattedMessage id="plural" defaultMessage="Cannot load messages" values={{num: num}}/>

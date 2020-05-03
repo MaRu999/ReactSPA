@@ -12,7 +12,8 @@ export const Numbers = (): JSX.Element => {
 
     return (
         <>
-            <input type="number" value={usedNum} onChange={(chosenNumber): void => changeNum(chosenNumber.target.value)}/>
+            <input type="number" value={usedNum}
+                   onChange={(chosenNumber): void => changeNum(chosenNumber.target.value)}/>
             <br/>
             <div>
                 <FormattedNumber value={usedNum}/>
