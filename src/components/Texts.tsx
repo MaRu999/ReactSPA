@@ -8,7 +8,8 @@ export const Texts = (): JSX.Element => {
     const [gender, setGender] = useState<string>("Male")
 
     const changeNum = (chosenNum: string): void => {
-        setNum(parseInt(chosenNum));
+        const temp = parseInt(chosenNum);
+        setNum(isNaN(temp) ? 0 : temp);
     }
 
     const changeGender = (gender: string): void => {
@@ -22,6 +23,7 @@ export const Texts = (): JSX.Element => {
                     onChange={(selectOption): void => changeGender(selectOption.target.value)}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
+                <option value="Neutral">Neutral</option>
             </select>
             <br/>
             <FormattedMessage id="plural" defaultMessage="Cannot load messages" values={{num: num}}/>

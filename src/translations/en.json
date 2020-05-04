@@ -3,6 +3,6 @@
   "numbers": "Numbers",
   "dates": "Dates",
   "plural": "I have {num, plural, one {# dog} other {# dogs}}.",
-  "select": "I am a {gender, select, Male {man} Female {woman}}.",
-  "both": "{gender, select, Male {He} Female {She}} has {num, plural, one {# cat} other {# cats}}."
+  "select": "I am a {gender, select, Male {man} Female {woman} Neutral {person}}.",
+  "both": "{gender, select, Male {He} Female {She} Neutral{A person}} has {num, plural, one {# cat} other {# cats}}."
 }
